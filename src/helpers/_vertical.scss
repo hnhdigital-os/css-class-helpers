@@ -1,0 +1,12 @@
+
+.v-middle {
+  @include v-al(middle !important);
+}
+
+.v-top{
+  @include v-al(top);
+}
+
+.v-bottom{
+  @include v-al(bottom);
+}

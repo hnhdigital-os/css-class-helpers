@@ -1,0 +1,12 @@
+
+.o-hidden {
+  @include o-f(hidden);
+}
+
+.o-auto {
+  @include o-f(auto);
+}
+
+.o-visible {
+  @include o-f(visible);
+}

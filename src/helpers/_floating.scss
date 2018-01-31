@@ -1,0 +1,10 @@
+
+.f-left {
+    @include flt(left);
+}
+.f-right {
+    @include flt(right !important);
+}
+.f-none {
+    @include flt(none);
+}

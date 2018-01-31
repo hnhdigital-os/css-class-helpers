@@ -1,0 +1,28 @@
+
+.text-center {
+  @include t-a(center);
+}
+
+.text-left {
+  @include t-a(left);
+}
+
+.text-right {
+  @include t-a(right);
+}
+
+.text-overline {
+  @include t-d(overline);
+}
+
+.text-through {
+  @include t-d(line-through);
+}
+
+.text-underline {
+  @include t-d(underline);
+}
+
+.text-plain {
+  @include t-d(none);
+}

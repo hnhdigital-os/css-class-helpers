@@ -1,0 +1,42 @@
+
+
+.hide-full-view {
+  @include d(none !important);
+}
+
+.show-on-hover {
+  @include d(none !important);
+}
+
+.show-on-parent-hover {
+  @include d(none !important);
+}
+
+:hover .show-on-parent-hover {
+  @include d(initial !important);
+}
+
+.show-on-hover:hover,
+a:hover .show-on-hover,
+input:hover .show-on-hover,
+button:hover .show-on-hover {
+  @include d(initial !important);
+}
+
+@media (max-width: 768px) {
+  .hide-mini-view {
+    @include d(none !important);
+  }
+
+  .hide-full-view {
+    @include d(initial !important);
+  }
+
+  .show-on-hover {
+    @include d(none !important);
+  }
+
+  .show-on-parent-hover {
+    @include d(none !important);
+  }
+}

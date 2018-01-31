@@ -1,0 +1,13 @@
+
+.d-flex{
+  @include d(flex);
+  align-items: center;
+}
+
+.d-block{
+  @include d(block);
+}
+
+.d-none{
+  @include d(none);
+}

@@ -1,0 +1,98 @@
+
+/**
+ * Font size.
+ */
+
+@for $i from 12 through 16 {
+  .f-#{$i} {
+    @if($i == 15) {
+      @include f-s(#{$i}px !important);
+    }
+    @else{
+      @include f-s(#{$i}px);
+    }
+  }
+}
+
+$f-s-val:18;
+
+@while $f-s-val <= 28 {
+  .f-#{$f-s-val}{
+    @if $f-s-val == 26 {
+      @include f-s(#{$f-s-val}px !important);
+    }@else{
+      @include f-s(#{$f-s-val}px);
+    }
+}
+  $f-s-val: $f-s-val + 2;
+}
+
+$f-s-val:30;
+
+@while $f-s-val <= 45 {
+  .f-#{$f-s-val}{
+    @include f-s(#{$f-s-val}px);
+  }
+  $f-s-val: $f-s-val + 5;
+}
+
+.f-52 {
+  @include f-s(52px);
+}
+
+.f-64 {
+  @include f-s(64px);
+}
+
+.f-90 {
+  @include f-s(90px);
+}
+
+.f-120 {
+  @include f-s(120px);
+}
+
+/**
+ * Font weight.
+ */
+
+.f-w-100 {
+    @include f-w(100);
+}
+.f-w-300 {
+    @include f-w(300);
+}
+.f-w-400 {
+    @include f-w(400);
+}
+.f-w-600 {
+    @include f-w(600);
+}
+.f-w-700 {
+    @include f-w(700);
+}
+.f-w-900 {
+    @include f-w(900);
+}
+.f-bold {
+    @include f-w(bold);
+}
+.f-thin {
+    @include f-w(lighter);
+}
+
+/**
+ * Font style.
+ */
+
+.f-normal {
+  @include f-st(normal);
+}
+
+.f-italic {
+  @include f-st(italic);
+}
+
+.f-oblique {
+  @include f-st(oblique);
+}

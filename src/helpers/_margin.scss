@@ -1,0 +1,91 @@
+
+/*========== ALL ===========*/
+
+$m-val:0;
+@while $m-val <= 50 {
+    .m-#{$m-val}{
+        @if $m-val == 0{
+            @include m(#{$m-val} !important);
+        }@else{
+            @include m(#{$m-val}px);
+        }
+    }
+    $m-val: $m-val + 5;
+}
+
+/*========== TOP ===========*/
+
+$m-t-val:0;
+@while $m-t-val <= 50 {
+    .m-t-#{$m-t-val}{
+        @if $m-t-val == 0{
+            @include mt(#{$m-t-val});
+        }@else if $m-t-val == 20{
+            @include mt(#{$m-t-val}px !important);
+        }@else{
+            @include mt(#{$m-t-val}px);
+        }
+    }
+    $m-t-val: $m-t-val + 5;
+}
+
+.m-t-70{
+    @include mt(70px);
+}
+
+.m-t-150{
+    @include mt(150px);
+}
+
+/*========== BOTTOM ===========*/
+
+$m-b-val:0;
+@while $m-b-val <= 50 {
+    .m-b-#{$m-b-val}{
+        @if $m-b-val == 0{
+            @include mb(#{$m-b-val});
+        }@else if $m-b-val == 10 or $m-b-val == 20 or $m-b-val == 30{
+            @include mb(#{$m-b-val}px !important);
+        }@else{
+            @include mb(#{$m-b-val}px);
+        }
+    }
+    $m-b-val: $m-b-val + 5;
+}
+.m-b-70{
+    @include mb(70px);
+}
+
+/*========== LEFT ===========*/
+
+$m-l-val:0;
+@while $m-l-val <= 50 {
+    .m-l-#{$m-l-val}{
+        @if $m-l-val == 0{
+            @include ml(#{$m-l-val});
+        }@else{
+            @include ml(#{$m-l-val}px);
+        }
+    }
+    $m-l-val: $m-l-val + 5;
+}
+
+/*========== RIGHT ===========*/
+
+$m-r-val:5;
+.m-r-0 {
+    @include mr(0);
+}
+.m-r-3 {
+    @include mr(3px !important);
+}
+@while $m-r-val <= 50 {
+    .m-r-#{$m-r-val}{
+        @if $m-r-val == 5 or $m-r-val == 10 {
+            @include mr(#{$m-r-val}px !important);
+        }@else{
+            @include mr(#{$m-r-val}px);
+        }
+    }
+    $m-r-val: $m-r-val + 5;
+}

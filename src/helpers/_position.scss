@@ -1,0 +1,16 @@
+
+.p-relative {
+  @include pos(relative);
+}
+
+.p-absolute {
+  @include pos(absolute);
+}
+
+.p-static {
+  @include pos(static);
+}
+
+.p-fixed {
+  @include pos(fixed);
+}

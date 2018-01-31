@@ -1,0 +1,92 @@
+
+/*========== ALL ===========*/
+
+.p-0 {
+    @include p(0 !important);
+}
+.p-3 {
+    @include p(3px);
+}
+$p-val:5;
+@while $p-val <= 50 {
+    .p-#{$p-val}{
+        @if $p-val == 5 or $p-val == 10 or $p-val == 40{
+            @include p(#{$p-val}px !important);
+        }@else{
+            @include p(#{$p-val}px);
+        }
+    }
+    $p-val: $p-val + 5;
+}
+
+/*========== TOP ===========*/
+
+.p-t-0 {
+    @include pt(0);
+}
+.p-t-2 {
+    @include pt(2px !important);
+}
+$p-t-val:5;
+@while $p-t-val <= 50 {
+    .p-t-#{$p-t-val}{
+        @if $p-t-val == 10{
+            @include pt(#{$p-t-val}px !important);
+        }@else{
+            @include pt(#{$p-t-val}px);
+        }
+    }
+    $p-t-val: $p-t-val + 5;
+}
+
+/*========== BOTTOM ===========*/
+
+.p-b-0 {
+    @include pb(0);
+}
+.p-b-2 {
+    @include pb(2px !important);
+}
+$p-b-val:5;
+@while $p-b-val <= 50 {
+    .p-b-#{$p-b-val}{
+        @include pb(#{$p-b-val}px);
+    }
+    $p-b-val: $p-b-val + 5;
+}
+
+.p-b-70{
+    @include pb(70px);
+}
+.p-b-100{
+    @include pb(100px !important);
+}
+
+/*========== LEFT ===========*/
+
+.p-l-0 {
+    @include pl(0);
+}
+$p-l-val:5;
+@while $p-l-val <= 50 {
+    .p-l-#{$p-l-val}{
+        @include pl(#{$p-l-val}px);
+    }
+    $p-l-val: $p-l-val + 5;
+}
+
+/*========== RIGHT ===========*/
+
+$p-r-val:0;
+@while $p-r-val <= 50 {
+    .p-r-#{$p-r-val}{
+        @if $p-r-val == 0{
+            @include pr(#{$p-r-val});
+        }@else if $p-r-val == 20 {
+            @include pr(#{$p-r-val}px !important);
+        }@else{
+            @include pr(#{$p-r-val}px);
+        }
+    }
+    $p-r-val: $p-r-val + 5;
+}
