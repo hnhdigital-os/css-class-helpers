@@ -3,53 +3,33 @@
  * Font size.
  */
 
-@for $i from 12 through 16 {
-  .f-#{$i} {
-    @if($i == 15) {
-      @include f-s(#{$i}px !important);
-    }
-    @else{
-      @include f-s(#{$i}px);
-    }
+@for $f-s-val from 8 through 16 {
+  .f-#{$f-s-val} {
+    @include f-s(#{$f-s-val}px !important);
+    @include f-s(#{calRem($f-s-val)}rem !important);
   }
 }
 
 $f-s-val:18;
 
 @while $f-s-val <= 28 {
-  .f-#{$f-s-val}{
-    @if $f-s-val == 26 {
-      @include f-s(#{$f-s-val}px !important);
-    }@else{
-      @include f-s(#{$f-s-val}px);
-    }
-}
+  .f-#{$f-s-val} {
+    @include f-s(#{$f-s-val}px !important);
+    @include f-s(#{calRem($f-s-val)}rem !important);
+  }
+
   $f-s-val: $f-s-val + 2;
 }
 
 $f-s-val:30;
 
 @while $f-s-val <= 45 {
-  .f-#{$f-s-val}{
-    @include f-s(#{$f-s-val}px);
+  .f-#{$f-s-val} {
+    @include f-s(#{$f-s-val}px !important);
+    @include f-s(#{calRem($f-s-val)}rem !important);
   }
+
   $f-s-val: $f-s-val + 5;
-}
-
-.f-52 {
-  @include f-s(52px);
-}
-
-.f-64 {
-  @include f-s(64px);
-}
-
-.f-90 {
-  @include f-s(90px);
-}
-
-.f-120 {
-  @include f-s(120px);
 }
 
 /**
