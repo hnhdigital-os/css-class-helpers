@@ -1,0 +1,13 @@
+{
+    "name": "hnhdigital-os/sass-helpers",
+    "description": "A bunch of helper classes",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rocco Howard",
+            "email": "rocco@hnh.digital"
+        }
+    ],
+    "require": {}
+}
