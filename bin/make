@@ -3,5 +3,5 @@
 PWD=$(pwd)
 ROOT="$( cd "$( dirname "$0" )" && cd ../ && pwd )"
 
-sass "${ROOT}/src/app.scss" "${ROOT}/dist/helper.css"
-sass "${ROOT}/src/app.scss" "${ROOT}/dist/helper.min.css" --style compressed
+sass "${ROOT}/src/app.scss" "${ROOT}/dist/css-class-helpers.css"
+sass "${ROOT}/src/app.scss" "${ROOT}/dist/css-class-helpers.min.css" --style compressed
