@@ -1,5 +1,4 @@
 
-
 .hide-full-view {
   @include d(none !important);
 }
@@ -12,7 +11,13 @@
   @include d(none !important);
 }
 
-:hover .show-on-parent-hover {
+tr:hover [class*="o-"],
+[class*="o-"]:hover {
+  opacity: 1 !important;
+}
+
+*:hover > .show-on-parent-hover,
+tr:hover .show-on-parent-hover {
   @include d(initial !important);
 }
 

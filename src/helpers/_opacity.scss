@@ -1,0 +1,15 @@
+
+.o-none {
+  @include o(0 !important);
+}
+
+$o-val: 5;
+
+@while $o-val <= 100 {
+
+  .o-#{$o-val} {
+    @include o(#{$o-val/100} !important);
+  }
+
+  $o-val: $o-val + 5;
+}

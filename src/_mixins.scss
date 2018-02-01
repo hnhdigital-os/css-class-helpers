@@ -39,6 +39,18 @@
   padding-right: $val;
 }
 
+@mixin w($val) {
+  width: $val;
+}
+
+@mixin minw($val) {
+  min-width: $val;
+}
+
+@mixin maxw($val) {
+  max-width: $val;
+}
+
 @mixin f-s($val) {
   font-size: $val;
 }
@@ -74,6 +86,11 @@
 @mixin d($val) {
   display: $val;
 }
+
+@mixin o($val) {
+  opacity: $val;
+}
+
 
 @mixin c($val) {
   color: $val;

@@ -1,0 +1,43 @@
+
+$w-val: 5;
+
+@for $w-val from 1 through 100 {
+
+  .w-#{$w-val} {
+    @include w(#{$w-val}px !important);
+    @include w(#{calRem($w-val)}rem !important);
+  }
+
+  .minw-#{$w-val} {
+    @include minw(#{$w-val}px !important);
+    @include minw(#{calRem($w-val)}rem !important);
+  }
+
+  .maxw-#{$w-val} {
+    @include maxw(#{$w-val}px !important);
+    @include maxw(#{calRem($w-val)}rem !important);
+  }
+
+}
+
+$w-val:125;
+
+@while $w-val <= 1000 {
+
+  .w-#{$w-val} {
+    @include w(#{$w-val}px !important);
+    @include w(#{calRem($w-val)}rem !important);
+  }
+
+  .minw-#{$w-val} {
+    @include minw(#{$w-val}px !important);
+    @include minw(#{calRem($w-val)}rem !important);
+  }
+
+  .maxw-#{$w-val} {
+    @include maxw(#{$w-val}px !important);
+    @include maxw(#{calRem($w-val)}rem !important);
+  }
+
+  $w-val: $w-val + 25;
+}
