@@ -3,12 +3,18 @@
  * Floating.
  */
 
+.f-fill {
+  flex: 1;
+}
+
 .f-left {
-    @include flt(left);
+  @include flt(left !important);
 }
+
 .f-right {
-    @include flt(right !important);
+  @include flt(right !important);
 }
+
 .f-none {
-    @include flt(none);
+  @include flt(none !important);
 }

@@ -14,14 +14,17 @@
 /**
  * Floating.
  */
+.f-fill {
+  flex: 1; }
+
 .f-left {
-  float: left; }
+  float: left !important; }
 
 .f-right {
   float: right !important; }
 
 .f-none {
-  float: none; }
+  float: none !important; }
 
 /**
  * Font size.
