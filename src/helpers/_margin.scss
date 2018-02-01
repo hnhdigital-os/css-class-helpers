@@ -3,23 +3,23 @@
  * Margins.
  */
 
-.m-0 {
+.m-0, .m-none {
   @include m(0 !important);
 }
 
-.m-t-0 {
+.m-t-0, .m-t-none {
   @include mt(0 !important);
 }
 
-.m-b-0 {
+.m-b-0, .m-b-none {
   @include mb(0 !important);
 }
 
-.m-l-0 {
+.m-l-0, .m-l-none{
   @include ml(0 !important);
 }
 
-.m-r-0 {
+.m-r-0, .m-r-none {
   @include mr(0 !important);
 }
 

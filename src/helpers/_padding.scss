@@ -3,23 +3,23 @@
  * Paddings.
  */
 
-.p-0 {
+.p-0, .p-none {
   @include p(0 !important);
 }
 
-.p-t-0 {
+.p-t-0, .p-t-none {
   @include mt(0 !important);
 }
 
-.p-b-0 {
+.p-b-0, .p-b-none {
   @include mb(0 !important);
 }
 
-.p-l-0 {
+.p-l-0, .p-l-none {
   @include ml(0 !important);
 }
 
-.p-r-0 {
+.p-r-0, .p-r-none {
   @include mr(0 !important);
 }
 
@@ -28,28 +28,28 @@ $p-val: 5;
 @while $p-val <= 50 {
 
   .p-#{$p-val} {
-    @include p(#{$p-val}px !important);
-    @include p(#{calRep($p-val)}rem !important);
+    @include p(#{$m-val}px !important);
+    @include p(#{calRem($p-val)}rem !important);
   }
 
   .p-t-#{$p-val} {
     @include pt(#{$p-val}px !important);
-    @include pt(#{calRep($p-val)}rem !important);
+    @include pt(#{calRem($p-val)}rem !important);
   }
 
   .p-b-#{$p-val} {
     @include pb(#{$p-val}px !important);
-    @include pb(#{calRep($p-val)}rem !important);
+    @include pb(#{calRem($p-val)}rem !important);
   }
 
   .p-l-#{$p-val} {
     @include pl(#{$p-val}px !important);
-    @include pl(#{calRep($p-val)}rem !important);
+    @include pl(#{calRem($p-val)}rem !important);
   }
 
   .p-r-#{$p-val} {
     @include pr(#{$p-val}px !important);
-    @include pr(#{calRep($p-val)}rem !important);
+    @include pr(#{calRem($p-val)}rem !important);
   }
 
 
