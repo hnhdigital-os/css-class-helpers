@@ -1,0 +1,8 @@
+
+$s-val: 1;
+
+@for $s-val from 1 through 10 {
+  .animated-#{$s-val}s {
+    animation-duration: #{$s-val}s !important;
+  }
+}

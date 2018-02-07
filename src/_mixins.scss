@@ -51,6 +51,18 @@
   max-width: $val;
 }
 
+@mixin h($val) {
+  height: $val;
+}
+
+@mixin minh($val) {
+  min-height: $val;
+}
+
+@mixin maxh($val) {
+  max-height: $val;
+}
+
 @mixin f-s($val) {
   font-size: $val;
 }
