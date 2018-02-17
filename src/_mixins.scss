@@ -116,6 +116,10 @@
   background-color: $val;
 }
 
+@mixin cursor($val) {
+  cursor: $val;
+}
+
 @mixin shadow($val...) {
   -webkit-box-shadow: $val;
   box-shadow: $val;
