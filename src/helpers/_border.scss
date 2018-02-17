@@ -1,0 +1,12 @@
+
+/**
+ * Border.
+ */
+
+.b-none{
+  @include b(none !important);
+}
+
+.b-r-none {
+  @include b(none !important,radius);
+}
