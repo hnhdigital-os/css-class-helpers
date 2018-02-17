@@ -8,19 +8,19 @@
 }
 
 .p-t-0, .p-t-none {
-  @include mt(0 !important);
+  @include pt(0 !important);
 }
 
 .p-b-0, .p-b-none {
-  @include mb(0 !important);
+  @include pb(0 !important);
 }
 
 .p-l-0, .p-l-none {
-  @include ml(0 !important);
+  @include pl(0 !important);
 }
 
 .p-r-0, .p-r-none {
-  @include mr(0 !important);
+  @include pr(0 !important);
 }
 
 $p-val: 5;
@@ -28,7 +28,7 @@ $p-val: 5;
 @while $p-val <= 50 {
 
   .p-#{$p-val} {
-    @include p(#{$m-val}px !important);
+    @include p(#{$p-val}px !important);
     @include p(#{calRem($p-val)}rem !important);
   }
 
