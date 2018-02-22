@@ -83,6 +83,10 @@
   text-decoration: $val;
 }
 
+@mixin t-t($val) {
+  text-transform: $val;
+}
+
 @mixin pos($val) {
   position: $val;
 }
@@ -126,7 +130,8 @@
 }
 
 @mixin v-al($val) {
-  vertical-align: $val;
+  display: flex;
+  align-items: $val;
 }
 
 @mixin b($val,$type:"") {
