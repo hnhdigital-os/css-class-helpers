@@ -1,0 +1,17 @@
+
+:root {
+
+  $px-val: 1;
+
+  @while $px-val <= 100 {
+    --#{$px-val}px: #{calRem($px-val)}rem;
+    $px-val: $px-val + 1;
+  }
+
+  $px-val: 120;
+
+  @while $px-val <= 1600 {
+    --#{$px-val}px: #{calRem($px-val)}rem;
+    $px-val: $px-val + 5;
+  }
+}

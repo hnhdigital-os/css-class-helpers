@@ -1,0 +1,10 @@
+
+@keyframes fx-half-spin {
+  0%   { transform: rotate(0); }
+  50%  { transform: rotate(180deg); }
+  100% { transform: rotate(180deg); }
+}
+
+.fx-half-spin {
+  animation: fx-half-spin 2s infinite linear;
+}
