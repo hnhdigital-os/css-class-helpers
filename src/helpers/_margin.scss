@@ -23,7 +23,7 @@
   @include mr(0 !important);
 }
 
-$m-val: 5;
+$m-val: 1;
 
 @while $m-val <= 50 {
 
@@ -52,6 +52,29 @@ $m-val: 5;
     @include mr(#{calRem($m-val)}rem !important);
   }
 
+  .m-t--#{$m-val} {
+    @include mt(-#{$m-val}px !important);
+    @include mt(-#{calRem($m-val)}rem !important);
+  }
 
-  $m-val: $m-val + 5;
+  .m-b--#{$m-val} {
+    @include mb(-#{$m-val}px !important);
+    @include mb(-#{calRem($m-val)}rem !important);
+  }
+
+  .m-l--#{$m-val} {
+    @include ml(-#{$m-val}px !important);
+    @include ml(-#{calRem($m-val)}rem !important);
+  }
+
+  .m-r--#{$m-val} {
+    @include mr(-#{$m-val}px !important);
+    @include mr(-#{calRem($m-val)}rem !important);
+  }
+
+  @if ($m-val >= 25) {
+    $m-val: $m-val + 5;
+  } @else {
+    $m-val: $m-val + 1;
+  }
 }
