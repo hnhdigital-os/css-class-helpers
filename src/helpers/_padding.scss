@@ -23,7 +23,7 @@
   @include pr(0 !important);
 }
 
-$p-val: 5;
+$p-val: 1;
 
 @while $p-val <= 50 {
 
@@ -52,6 +52,9 @@ $p-val: 5;
     @include pr(#{calRem($p-val)}rem !important);
   }
 
-
-  $p-val: $p-val + 5;
+  @if ($p-val >= 25) {
+    $p-val: $p-val + 5;
+  } @else {
+    $p-val: $p-val + 1;
+  }
 }
