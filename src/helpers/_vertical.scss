@@ -4,13 +4,13 @@
  */
 
 .v-middle {
-  @include v-al(middle !important);
+  @include v-al(center !important);
 }
 
-.v-top{
-  @include v-al(top);
+.v-top {
+  @include v-al(flex-start !important);
 }
 
-.v-bottom{
-  @include v-al(bottom);
+.v-bottom {
+  @include v-al(flex-end !important);
 }
