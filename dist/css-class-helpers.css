@@ -397,6 +397,21 @@
   --1595px: 99.6875rem;
   --1600px: 100rem; }
 
+/**
+ * Background.
+ */
+.bg-none {
+  background: none !important; }
+
+/**
+ * Border.
+ */
+.b-none {
+  border: none !important; }
+
+.b-r-none {
+  border-radius: none !important; }
+
 .c-alias {
   cursor: alias; }
 
@@ -507,15 +522,6 @@
 
 .c-initial {
   cursor: initial; }
-
-/**
- * Border.
- */
-.b-none {
-  border: none !important; }
-
-.b-r-none {
-  border-radius: none !important; }
 
 /**
  * Display.
