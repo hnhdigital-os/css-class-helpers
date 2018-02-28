@@ -3,6 +3,6 @@ $cursor-list: alias all-scroll auto cell context-menu col-resize copy crosshair 
 
 @each $item in $cursor-list {
     .c-#{$item} {
-        @include cursor($item);
+        @include cursor($item !important);
     }
 }
