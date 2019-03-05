@@ -3,26 +3,6 @@
  * Paddings.
  */
 
-.p-0, .p-none {
-  @include p(0 !important);
-}
-
-.p-t-0, .p-t-none {
-  @include pt(0 !important);
-}
-
-.p-b-0, .p-b-none {
-  @include pb(0 !important);
-}
-
-.p-l-0, .p-l-none {
-  @include pl(0 !important);
-}
-
-.p-r-0, .p-r-none {
-  @include pr(0 !important);
-}
-
 $p-val: 1;
 
 @while $p-val <= 50 {
@@ -57,4 +37,24 @@ $p-val: 1;
   } @else {
     $p-val: $p-val + 1;
   }
+}
+
+.p-0, .p-none {
+  @include p(0 !important);
+}
+
+.p-t-0, .p-t-none {
+  @include pt(0 !important);
+}
+
+.p-b-0, .p-b-none {
+  @include pb(0 !important);
+}
+
+.p-l-0, .p-l-none {
+  @include pl(0 !important);
+}
+
+.p-r-0, .p-r-none {
+  @include pr(0 !important);
 }
